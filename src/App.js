@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <video 
+        className="background-video" 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+      >
+        <source src="/background-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="coming-soon-container">
+        <div className="logo-container">
+          <img src="/logo2.png" alt="Logo" className="logo" />
+        </div>
+        <h1 className="coming-soon-title">coming soon</h1>
+      </div>
     </div>
   );
 }

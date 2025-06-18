@@ -68,3 +68,117 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Coming Soon Template
+
+A clean, modern "Coming Soon" page built with React. Perfect for temporary landing pages while your main application is in development.
+
+## Features
+
+- ✨ Clean and modern design
+- 📱 Fully mobile responsive
+- 🚀 Easy deployment on Vercel
+- 🎨 Plain black background with centered content
+- 🎬 Looping background video support
+- ⚡ Fast and lightweight
+
+## Quick Start
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Add your background video:**
+   - Place your video file in the `public/` folder
+   - Name it `background-video.mp4` (or update the source in `src/App.js`)
+   - Recommended: MP4 format, optimized for web (compressed)
+
+3. **Start development server:**
+   ```bash
+   npm start
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Video Background Setup
+
+The template includes support for a looping background video:
+
+### Adding Your Video
+1. Place your video file in the `public/` directory
+2. Name it `background-video.mp4` (or update the source path in `src/App.js`)
+3. The video will automatically loop every 21 seconds
+
+### Video Specifications
+- **Format**: MP4 (recommended for web compatibility)
+- **Duration**: 21 seconds (will loop seamlessly)
+- **Size**: Optimize for web (compress to reduce file size)
+- **Aspect Ratio**: 16:9 or similar (will be cropped to fit)
+
+### Customizing Video Settings
+You can modify the video behavior in `src/App.js`:
+- Change opacity: Edit the `opacity` value in `src/App.css`
+- Disable video: Comment out the `<video>` element
+- Change video source: Update the `src` attribute
+
+## Deploy to Vercel
+
+### Option 1: Deploy with Vercel CLI
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run: `vercel`
+3. Follow the prompts
+
+### Option 2: Deploy via GitHub
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically detect the React app and deploy
+
+### Option 3: Import to Vercel Dashboard
+1. Go to [vercel.com](https://vercel.com)
+2. Click "New Project"
+3. Import your repository
+4. Deploy
+
+## Customization
+
+The template is designed to be easily swappable with your main app later. To customize:
+
+- **Text**: Edit the content in `src/App.js`
+- **Styling**: Modify `src/App.css`
+- **Video**: Replace `public/background-video.mp4` with your video
+- **Colors**: Update the CSS variables in the stylesheet
+- **Fonts**: Change the font-family in the CSS
+
+## File Structure
+
+```
+coming-soon/
+├── public/
+│   ├── index.html          # Main HTML template
+│   └── background-video.mp4 # Your background video (add this)
+├── src/
+│   ├── App.js             # Main React component
+│   ├── App.css            # Styles
+│   └── index.js           # App entry point
+├── vercel.json            # Vercel configuration
+└── package.json           # Dependencies and scripts
+```
+
+## Replacing with Your Main App
+
+When you're ready to replace this with your main application:
+
+1. Replace the contents of `src/App.js` with your main app component
+2. Update `src/App.css` with your app's styles
+3. Add any additional components, pages, or dependencies
+4. Update the title and meta description in `public/index.html`
+
+The Vercel configuration will work for most React applications, so no changes needed there.
+
+## License
+
+MIT
